@@ -17,17 +17,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         display: block;
       }
-
-      span,
-      input {
-        @apply(--paper-font-body2);
-      }
     </style>
-
-    <h1 class="page-title" tabindex="-1">{{greeting}}</h1>
-    <label for="greeting-input">Update text to change the greeting.</label>
-    <!-- Listens for "input" event and sets greeting to <input>.value -->
-    <input id="greeting-input" value="{{greeting::input}}">
+    <iron-icon icon="flip-to-front"></iron-icon><h2 style="display: inline-block;" tabindex="-1">&nbsp;{{greeting}}</h2>
   </template>
 
   <script>
@@ -36,11 +27,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       Polymer({
         is: 'my-greeting',
-
         properties: {
           greeting: {
             type: String,
-            value: 'Welcome!',
             notify: true
           }
         }

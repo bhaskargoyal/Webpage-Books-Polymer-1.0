@@ -1,0 +1,29 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
+
+<dom-module id="my-caption">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+      }
+    </style>
+    <iron-icon icon="flip-to-front"></iron-icon><h2 style="display: inline-block;" tabindex="-1">&nbsp;{{caption}}</h2>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'my-caption',
+        properties: {
+          caption: {
+            type: String,
+            notify: true
+          }
+        }
+      });
+    })();
+  </script>
+</dom-module>

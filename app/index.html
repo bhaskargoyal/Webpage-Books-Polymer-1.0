@@ -57,6 +57,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
+
+
+
+
+  <!-- All my elements -->
+
+  <!-- <linl rel="import" href="elements/icon-toggle/icon-toggle.html"> -->
 </head>
 
 <body unresolved>
@@ -82,14 +89,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="books" href="{{baseUrl}}books">
-            <iron-icon icon="book"></iron-icon>
-            <span>Books</span>  
+          <a data-route="genre" href="{{baseUrl}}genre">
+            <iron-icon icon="account-balance"></iron-icon>
+            <span>Genre</span>  
           </a>
 
-          <a data-route="users" href="{{baseUrl}}users">
+          <a data-route="history" href="{{baseUrl}}history">
+            <iron-icon icon="book"></iron-icon>
+            <span>History</span>  
+          </a>
+
+          <a data-route="paper" href="{{baseUrl}}paper">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>Paper and Conservation</span>
           </a>
 
           <a data-route="contact" href="{{baseUrl}}contact">
@@ -114,12 +126,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">
+            Books
+            </div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container">
-            <div class="bottom-title">The future of the web today</div>
+            <div class="bottom-title">The future of which is slowly degrading</div>
           </div>
         </paper-toolbar>
 
@@ -128,59 +142,92 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
             <section data-route="home" tabindex="-1">
               <paper-material elevation="1">
-                <my-greeting></my-greeting>
+                <my-caption caption="What are Books?"></my-caption>
 
-                <p class="subhead">You now have:</p>
+                <p class="subhead"></p>
+                <p>A book is a set of written, printed, illustrated, or blank sheets, made of ink, paper, parchment, or other materials, fastened together to hinge at one side. A single sheet within a book is a leaf, and each side of a leaf is a page. A set of text-filled or illustrated pages produced in electronic format is known as an electronic book, or e-book.</p>
+              </paper-material>
+
+             
+
+              <paper-material elevation="1">
+                <my-caption caption="Book design"></my-caption>
+                
+                <p>Book design is the art of incorporating the content, style, format, design, and sequence of the various components of a book into a coherent whole.</p>
+                <p>In the words of Jan Tschichold, book design "though largely forgotten today, methods and rules upon which it is impossible to improve have been developed over centuries. To produce perfect books these rules have to be brought back to life and applied." Richard Hendel describes book design as "an arcane subject" and refers to the need for a context to understand what that means.</p>
+               
+                <p></p>
+              </paper-material>
+              <paper-material elevation="1">               
+                
+                <p>Copyright (c) 2016. All rights reserved. Made from Polymer 1.0</p>
+                <p>Redistribution and use in source and binary forms, with or without modification, are permitted.</p>
+                
+                <p></p>
+              </paper-material>
+            </section>
+
+            <section data-route="genre" tabindex="-1">
+              <paper-material elevation="3">
+                <my-caption caption="GENRE"></my-caption>
+              </paper-material>
+               <paper-material elevation="1">
+
+                <my-caption caption="Genre"></my-caption>
+                <p><b>A literary genre is a style of writing.</b>
+                </p><p>The word genre means "artistic category or style," and you can talk about a movie's genre, or the genre of music that drives you crazy. When you use the term literary genre, you make it clear that you're talking about books and writing. Bookstores sometimes use literary genres as a way to separate books into different sections, like "classics" or "mysteries." The word genre is French, and it means "kind, sort, or style."
+                </p>
+
+              </paper-material>
+
+              <paper-material elevation='1'>
+                <my-caption caption="Types of Genres"></my-caption>
                 <my-list></my-list>
-                <icon-toggle toggleIcon="polymer"></icon-toggle>
-
-                <p>Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
-              </paper-material>
-
-              <paper-material elevation="1">
-                <p>This is another card.</p>
-              </paper-material>
-
-              <paper-material elevation="1">
-                <h2 id="license">License</h2>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
               </paper-material>
             </section>
 
-            <section data-route="books" tabindex="-1">
+            <section data-route="history" tabindex="-1">
+              <paper-material elevation="3">
+                <my-caption caption="HISTORY"></my-caption>
+              </paper-material>
               <paper-material elevation="1">
-                <h1 class="page-title" tabindex="-1">Books</h1>
+                <my-greeting greeting="Antiquity"></my-greeting>
+                <p>When writing systems were created in ancient civilizations, a variety of objects, such as stone, clay, tree bark, metal sheets, might be used for writing. The study of such inscriptions forms a major part of history. The study of inscriptions is known as epigraphy. Alphabetic writing emerged in Egypt. The Ancient Egyptians would often write on papyrus, a plant grown along the Nile River. At first the words were not separated from each other (scriptura continua) and there was no punctuation. Texts were written from right to left, left to right, or even so that alternate lines read in opposite directions. The technical term for that last type of writing is 'boustrophedon', which means literally 'ox-turning' for the way a farmer drives an ox to plough his fields.</p>
+
+                <my-greeting greeting="Tablet"></my-greeting>
+                <p>ablet might be defined as a physically robust writing medium, suitable for casual transport and writing.</p>
+                <p>Clay tablets were flattened and mostly dry pieces of clay that could be easily carried, and impressed with a (possibly dampened) stylus. They were used as a writing medium, especially for writing in cuneiform, throughout the Bronze Age and well into the Iron Age.Wax tablets were pieces of wood covered in a thick enough coating of wax to record the impressions of a stylus. They were the normal writing material in schools, in accounting, and for taking notes. They had the advantage of being reusable: the wax could be melted, and reformed into a blank. The custom of binding several wax tablets together (Roman pugillares) is a possible precursor for modern books (i.e. codex). The etymology of the word codex (block of wood) also suggests that it may have developed from wooden wax tablets</p>
+
+                <my-greeting greeting="Scroll"></my-greeting>
+                <p>Papyrus, a thick paper-like material made by weaving the stems of the papyrus plant, then pounding the woven sheet with a hammer-like tool, was used for writing in Ancient Egypt, perhaps as early as the First Dynasty, although the first evidence is from the account books of King Nefertiti Kakai of the Fifth Dynasty (about 2400 BC). Papyrus sheets were glued together to form a scroll. Tree bark such as lime and other materials were also used.</p>
+
+                <my-greeting greeting="Manuscripts"></my-greeting>
+                <p>The fall of the Roman Empire in the 5th century A.D. saw the decline of the culture of ancient Rome. Papyrus became difficult to obtain due to lack of contact with Egypt, and parchment, which had been used for centuries, became the main writing material.
+                </p><p>Monasteries carried on the Latin writing tradition in the Western Roman Empire. Cassiodorus, in the monastery of Vivarium (established around 540), stressed the importance of copying texts. St. Benedict of Nursia, in his Rule of Saint Benedict (completed around the middle of the 6th century) later also promoted reading. The Rule of Saint Benedict (Ch. XLVIII), which set aside certain times for reading, greatly influenced the monastic culture of the Middle Ages and is one of the reasons why the clergy were the predominant readers of books. The tradition and style of the Roman Empire still dominated, but slowly the peculiar medieval book culture emerged.</p>
+
+                <my-greeting greeting="Book manufacture in modern times"></my-greeting>
+                <p>The methods used for the printing and binding of books continued fundamentally unchanged from the 15th century into the early 20th century. While there was more mechanization, a book printer in 1900 had much in common with Gutenberg.
+                </p>
+                <p>Gutenberg's invention was the use of movable metal types, assembled into words, lines, and pages and then printed by letterpress to create multiple copies.</p>
+                <p>Modern paper books are printed on papers designed specifically for printed books. Traditionally, book papers are off-white or low-white papers (easier to read), are opaque to minimise the show-through of text from one side of the page to the other and are (usually) made to tighter caliper or thickness specifications, particularly for case-bound books. Different paper qualities are used depending on the type of book: Machine finished coated papers, woodfree uncoated papers, coated fine papers and special fine papers are common paper grades.</p>
               </paper-material>
             </section>
 
-            <section data-route="users" tabindex="-1">
+            <section data-route="paper" tabindex="-1">
+              <paper-material elevation="3">
+                <my-caption caption="Paper and Conservation"></my-caption>
+              </paper-material>
               <paper-material elevation="1">
-                <h1 class="page-title" tabindex="-1">Users</h1>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
+                <p>Paper was first made in China as early as 200 BC, and reached Europe through Muslim territories. At first made of rags, the industrial revolution changed paper-making practices, allowing for paper to be made out of wood pulp. Papermaking in Europe began in the 11th century, although vellum was also common there as page material up until the beginning of 16th century, vellum being the more expensive and durable option. Printers or publishers would often issue the same publication on both materials, to cater to more than one market.</p>
+                <p>Paper made from wood pulp became popular in the early 20th century, because it was cheaper than linen or abaca cloth-based papers. Pulp-based paper made books less expensive to the general public. This paved the way for huge leaps in the rate of literacy in industrialised nations, and enabled the spread of information during the Second Industrial Revolution.</p>
+                <p>Pulp paper, however, contains acid which eventually destroys the paper from within. Earlier techniques for making paper used limestone rollers, which neutralized the acid in the pulp. Books printed between 1850 and 1950 are primarily at risk; more recent books are often printed on acid-free or alkaline paper. Libraries today have to consider mass deacidification of their older collections in order to prevent decay.</p>
+                <p>Stability of the climate is critical to the long-term preservation of paper and book material. Good air circulation is important to keep fluctuation in climate stable. The HVAC system should be up to date and functioning efficiently. Light is detrimental to collections. Therefore, care should be given to the collections by implementing light control. General housekeeping issues can be addressed, including pest control. In addition to these helpful solutions, a library must also make an effort to be prepared if a disaster occurs, one that they cannot control. Time and effort should be given to create a concise and effective disaster plan to counteract any damage incurred through "acts of god" therefore an emergency management plan should be in place.</p>
               </paper-material>
             </section>
 
-            <section data-route="user-info" tabindex="-1">
+            <section data-route="paper-info" tabindex="-1">
               <paper-material elevation="-1">
-                <h1 class="page-title" tabindex="-1">User: {{params.name}}</h1>
+                <h1 class="page-title" tabindex="-1">Paper: {{params.name}}</h1>
                 <div>This is {{params.name}}'s section</div>
               </paper-material>
             </section>
